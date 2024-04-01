@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Course_Registration"
+    android:orientation="vertical"
+    android:background="@drawable/edit"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:transitionName="logo_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Course"
+        android:textSize="40sp"
+        android:transitionName="logo_text"
+        android:layout_marginTop="-28dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add courses for new students!"
+        android:textSize="18sp"
+        android:transitionName="logo_desc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name">
+
+        </EditText>
+        <EditText
+            android:id="@+id/last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            app:counterMaxLength="15"
+            android:transitionName="username_tran">
+
+        </EditText>
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            app:counterMaxLength="15"
+            android:transitionName="username_tran">
+
+        </EditText>
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Name">
+        </EditText>
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Code">
+
+        </EditText>
+        <EditText
+            android:id="@+id/semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student's Year">
+        </EditText>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/priority"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Priority"></CheckBox>
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="280dp"
+        android:layout_height="58dp"
+        android:background="#FF5722"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:transitionName="button_tran" />
+</LinearLayout>
